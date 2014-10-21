@@ -1,0 +1,1 @@
+Zipcode  Duration (s)  Distance
