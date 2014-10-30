@@ -4,9 +4,9 @@ body{
 }
 #map{
   display: block;
-  width: 95%;
+  width: 75%;
   opacity: 0.5;
-  height: 350px;
+  height: 400px;
   margin: 0 auto;
   -moz-box-shadow: 0px 5px 20px #ccc;
   -webkit-box-shadow: 0px 5px 20px #ccc;
