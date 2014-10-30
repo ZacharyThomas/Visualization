@@ -11,5 +11,9 @@ def index():
 def white():
     return render_template('poly_white.html')
 
+@app.route('/west')
+def west():
+	return render_template('poly_west.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
