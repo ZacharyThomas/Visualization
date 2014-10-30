@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Jayd Analytics &mdash; Merck Challenge</title>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="{{ url_for('static',filename='gmaps.js') }}"></script>
-  <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='examples.css') }}" />
-  <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
-  <script src="{{ url_for('static',filename='kennilworth.js') }}" ></script>
-  <script src="{{ url_for('static',filename='whitehouse.js') }}" ></script>
-  <script src="{{ url_for('static',filename='westpoint.js') }}" ></script>
-  <script type="text/javascript">
+function whitehouse()
+{
+    document.getElementById("loc").innerHTML = "Current Location: Whitehouse Station"
     var map;
-    $(document).ready(function(){
       map = new GMaps({
         el: '#map',
 		zoom: 8,
@@ -2991,24 +2978,5 @@ path422 = [[40.664865, -73.979961], [40.665131, -73.979739], [40.665759, -73.979
         strokeWeight: 2
       });
 
-    });
-  </script>
-</head>
-<body>
-  <h1><center>Merck Traffic Routes Based On Location</center></h1>
-  <div class="row">
-    <div class="span11">
-      <div id="map"></div>
-    </div>
-    <div class="span6">
-      <p>Change the location of the data by clicking the buttons below!</p>
-      <p id="loc">Current Location: Whitehouse</p>
-    </div>
-  </div>
-
-<button type="button" onclick=kennilworth()> Kennilworth</button>
-<button type="button" onclick=whitehouse()> Whitehouse Station</button>
-<button type="button" onclick=westpoint()> West Point</button>
-
-</body>
-</html>
+    };
+ 

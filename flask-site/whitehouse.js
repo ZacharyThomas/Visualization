@@ -3007,7 +3007,7 @@ path422 = [[40.664865, -73.979961], [40.665131, -73.979739], [40.665759, -73.979
   </div>
 
 <button type="button" onclick=kennilworth()> Kennilworth</button>
-<button type="button" onclick=whitehouse()> Whitehouse Station</button>
+<button type="button" onclick=whitehouse()> Whitehouse</button>
 <button type="button" onclick=westpoint()> West Point</button>
 
 </body>
