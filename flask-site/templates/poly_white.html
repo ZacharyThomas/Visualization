@@ -12,11 +12,11 @@
   <script src="{{ url_for('static',filename='kennilworth.js') }}" ></script>
   <script src="{{ url_for('static',filename='whitehouse.js') }}" ></script>
   <script src="{{ url_for('static',filename='westpoint.js') }}" ></script>
-<script type="text/javascript">
+  <script type="text/javascript">
     var map;
-    var color_kw = '953233'; // RED
-    var color_ws = '2c3485'; // BLUE
-    var color_wp = '2d6c3e'; // GREEN
+    var color_kw = '#953233'; // RED
+    var color_ws = '#2c3485'; // BLUE
+    var color_wp = '#2d6c3e'; // GREEN
     map = new GMaps({
         el: '#map',
         zoom: 8,
@@ -45,19 +45,21 @@ function call_all(color_kw,color_ws,color_wp)
 
 </script>
 <script type="text/javascript">
-    var color_kw = '953233'; // RED
-    var color_ws = '2c3485'; // BLUE
-    var color_wp = '2d6c3e'; // GREEN
+    var color_kw = '#953233'; // RED
+    var color_ws = '#2c3485'; // BLUE
+    var color_wp = '#2d6c3e'; // GREEN
 //    call_all('#953233','#A8D7E2','#aee0a3')
 //    call_all(color_kw,color_ws,color_wp);
 </script>
-<!--
 <script type="text/javascript">
     var map;
-    var color_kw = '953233'; // RED
-    var color_ws = '2c3485'; // BLUE
-    var color_wp = '2d6c3e'; // GREEN
+    var color_kw = '#000000'; // RED
+    var color_ws = '#000000'; // BLUE
+    var color_wp = '#000000'; // GREEN
     $(document).ready(function swag(color_kw,color_ws,color_wp){
+    color_wp = '#000000';
+    color_kw = '#000000';
+    color_ws = '#000000';
       map = new GMaps({
         el: '#map',
 		zoom: 8,
@@ -3038,13 +3040,11 @@ westpoint(map,color_wp)
     });
 
 
-  </script> -->
+  </script> 
 </head>
 
 <body>
-<script>
-call_all('#953233','#A8D7E2','#aee0a3')
-</script>
+
 <!--<section id=merckmaps> -->
   <h1><center>Merck Traffic Routes Based On Location</center></h1>
   <div class="row">
@@ -3055,16 +3055,44 @@ call_all('#953233','#A8D7E2','#aee0a3')
     <div><!--class="span6">-->
       <br>
       <center>
-      <p>Change Merck headquarters location by clicking the buttons below!</p>
-      <p id="loc">Current Location: Whitehouse Station</p>
-      <button type="button" class="btn btn-success" onclick=call_all('#953233','#A8D7E2','#aee0a3')> Kennilworth</button>
+      <p>Change the boldness of the colors with the buttons below!</p>
+<!--      <p id="loc">Currently bolded: Whitehouse Station</p> -->
+      <button type="button" class="btn btn-danger" onclick=call_all('#953233','#A8D7E2','#aee0a3')> Kenilworth</button>
       <button type="button" class="btn btn-primary" onclick=call_all('#dfa0a8','#2c3485','#aee0a3')> Whitehouse Station</button>
-      <button type="button" class="btn btn-danger" onclick=call_all('#dfa0a8','#a8d72e','#246c3e')> West Point</button>
+      <button type="button" class="btn btn-success" onclick=call_all('#dfa0a8','#a8d7E2','#246c3e')> West Point</button>
       </center>
   </div>
   </div>
 <!-- </section> -->
+<section>
+<h1><center> Organization Info </center></h1>
+<div class="horizontal">
+    <div class="table">
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
+        <article>
+            <img src="https://imgur.com/kxdhmid.jpg">
+        </article>
 
-
+  <!-- Repeat this part as many times as necessary. -->
+    </div>
+</div>
+</section>
 </body>
 </html>

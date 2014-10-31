@@ -1,6 +1,6 @@
 function kennilworth(map,color_kw)
 {
-/*    document.getElementById("loc").innerHTML = "Current Location: Kennilworth";
+/*
     var map;
       map = new GMaps({
         el: '#map',
