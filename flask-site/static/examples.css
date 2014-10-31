@@ -7,14 +7,14 @@ body section#merckmaps {
     
 }
 
-body section {
+body {
   display: block;
   width: 100%;
   position: relative;
   padding: 50px 0px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Arial', serif;
   font-size: 24px;
-  color: white;
+  color: black;
 }
 
 #map{

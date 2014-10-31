@@ -1,6 +1,6 @@
-function westpoint()
+function westpoint(map, color_wp)
 {
-    document.getElementById("loc").innerHTML = "Current Location: West Point"
+/*    document.getElementById("loc").innerHTML = "Current Location: West Point"
     var map;
       map = new GMaps({
         el: '#map',
@@ -11,7 +11,8 @@ function westpoint()
           console.log(e);
         }
       });
-      map.addMarker({
+*/  
+    map.addMarker({
 	    lat: 40.20992,
 		lng: -75.295623,
         title: 'Westpoint',
@@ -446,2527 +447,2527 @@ path420 = [[40.317099, -74.021319], [40.317651, -74.021517], [40.317839, -74.021
 path421 = [[40.664865, -73.979961], [40.665131, -73.979739], [40.665759, -73.979229], [40.666902, -73.981558], [40.66629, -73.982089], [40.661467, -73.986107], [40.661639, -73.986391], [40.666177, -73.993928], [40.66681, -73.994867], [40.667062, -73.995081], [40.66702, -73.995231], [40.666869, -73.995757], [40.666762, -73.995891], [40.665791, -73.996197], [40.665389, -73.996497], [40.665341, -73.99653], [40.66459, -73.997141], [40.662862, -73.998917], [40.646812, -74.015579], [40.642408, -74.020289], [40.641281, -74.021281], [40.640568, -74.021667], [40.639779, -74.021839], [40.639141, -74.021769], [40.638642, -74.021549], [40.638218, -74.021238], [40.6378, -74.020761], [40.635868, -74.01766], [40.635058, -74.016652], [40.634248, -74.01618], [40.633358, -74.01611], [40.632789, -74.01619], [40.627709, -74.017987], [40.62515, -74.019071], [40.624592, -74.019398], [40.623348, -74.020278], [40.61631, -74.026291], [40.615119, -74.027472], [40.614271, -74.028341], [40.613628, -74.029231], [40.61131, -74.031221], [40.610822, -74.03194], [40.610511, -74.032707], [40.602448, -74.05763], [40.602051, -74.059739], [40.602228, -74.06212], [40.603301, -74.066648], [40.603789, -74.068257], [40.605232, -74.0719], [40.605919, -74.074378], [40.606241, -74.076519], [40.60638, -74.081497], [40.606509, -74.08272], [40.606772, -74.084072], [40.607378, -74.086051], [40.609588, -74.091356], [40.610269, -74.09317], [40.610559, -74.09435], [40.610741, -74.096061], [40.61035, -74.108968], [40.610452, -74.109971], [40.611181, -74.113141], [40.611332, -74.115089], [40.611112, -74.116811], [40.609331, -74.123607], [40.608918, -74.12571], [40.608558, -74.128199], [40.608338, -74.130629], [40.6077, -74.142919], [40.607791, -74.145017], [40.607931, -74.145891], [40.608349, -74.147511], [40.608859, -74.148788], [40.609438, -74.149839], [40.61587, -74.158267], [40.617538, -74.160767], [40.619051, -74.163508], [40.620392, -74.166491], [40.6211, -74.168331], [40.62132, -74.169259], [40.621792, -74.17274], [40.622098, -74.173749], [40.622709, -74.174972], [40.623718, -74.176281], [40.625569, -74.178239], [40.626481, -74.179489], [40.627822, -74.181731], [40.637381, -74.199889], [40.642139, -74.206997], [40.642821, -74.208199], [40.643287, -74.209191], [40.643438, -74.210098], [40.643282, -74.211557], [40.643067, -74.212061], [40.642799, -74.212308], [40.642252, -74.212362], [40.641941, -74.212249], [40.641549, -74.2119], [40.641061, -74.211117], [40.64082, -74.210409], [40.640562, -74.208569], [40.640342, -74.208108], [40.64009, -74.20792], [40.639688, -74.207941], [40.638352, -74.208741], [40.637617, -74.208961], [40.63472, -74.210489], [40.634452, -74.210559], [40.634232, -74.210688], [40.631958, -74.212029], [40.62573, -74.215929], [40.60461, -74.228707], [40.601847, -74.230558], [40.599197, -74.232671], [40.597352, -74.233911], [40.595399, -74.23501], [40.593677, -74.23582], [40.592449, -74.236507], [40.586189, -74.24031], [40.5812, -74.243609], [40.579698, -74.244698], [40.577171, -74.246748], [40.572209, -74.251329], [40.559881, -74.263227], [40.556792, -74.266639], [40.554179, -74.270131], [40.549748, -74.277239], [40.54867, -74.279111], [40.547189, -74.282078], [40.54602, -74.28505], [40.545102, -74.287957], [40.544298, -74.29138], [40.542662, -74.299319], [40.541342, -74.30832], [40.540907, -74.310949], [40.540419, -74.313272], [40.539228, -74.317601], [40.53763, -74.322037], [40.53631, -74.324939], [40.534658, -74.328008], [40.529347, -74.336199], [40.527287, -74.340067], [40.525828, -74.343039], [40.523999, -74.347288], [40.520201, -74.356917], [40.519337, -74.358928], [40.518318, -74.361031], [40.517138, -74.363209], [40.5154, -74.365897], [40.513308, -74.368649], [40.485638, -74.399698], [40.484849, -74.400519], [40.482768, -74.402337], [40.477302, -74.406269], [40.474501, -74.408399], [40.473091, -74.409338], [40.462598, -74.415839], [40.441398, -74.428339], [40.439032, -74.429959], [40.431677, -74.435328], [40.425369, -74.440339], [40.422, -74.442881], [40.417982, -74.445548], [40.41538, -74.44705], [40.413642, -74.447951], [40.412027, -74.448707], [40.410102, -74.44948], [40.400381, -74.453101], [40.361317, -74.469012], [40.357112, -74.470921], [40.352118, -74.473528], [40.350921, -74.474059], [40.344961, -74.476409], [40.337521, -74.479681], [40.336748, -74.479939], [40.334082, -74.481087], [40.327028, -74.484289], [40.29533, -74.498001], [40.280932, -74.504368], [40.280229, -74.50468], [40.270541, -74.508917], [40.257602, -74.513901], [40.254582, -74.515097], [40.253552, -74.515601], [40.25102, -74.517109], [40.248981, -74.518648], [40.247249, -74.520199], [40.245328, -74.522259], [40.243939, -74.524029], [40.242222, -74.526588], [40.240001, -74.5306], [40.230157, -74.547799], [40.228022, -74.551001], [40.192628, -74.602537], [40.190531, -74.606121], [40.17433, -74.635131], [40.17057, -74.641317], [40.16727, -74.646209], [40.164969, -74.649288], [40.162029, -74.653], [40.128979, -74.694499], [40.124242, -74.700411], [40.121979, -74.703109], [40.119318, -74.7065], [40.114898, -74.711778], [40.111609, -74.71533], [40.103058, -74.724031], [40.102479, -74.72468], [40.10088, -74.726847], [40.098772, -74.729191], [40.098161, -74.730248], [40.097699, -74.731771], [40.096862, -74.737527], [40.096567, -74.739861], [40.094947, -74.752768], [40.094642, -74.756217], [40.094502, -74.759581], [40.094577, -74.763958], [40.094819, -74.767198], [40.095269, -74.770647], [40.095908, -74.774199], [40.097828, -74.781221], [40.098509, -74.783152], [40.099598, -74.785807], [40.100891, -74.788591], [40.109061, -74.804159], [40.110139, -74.806578], [40.110719, -74.80808], [40.111679, -74.811058], [40.117129, -74.830557], [40.117671, -74.83251], [40.121431, -74.845701], [40.123422, -74.85297], [40.12369, -74.854177], [40.124232, -74.857519], [40.12907, -74.890832], [40.129162, -74.892098], [40.12914, -74.895161], [40.127971, -74.95101], [40.128008, -74.952539], [40.128362, -74.954668], [40.132112, -74.971121], [40.13518, -74.987901], [40.135551, -74.989178], [40.136162, -74.990648], [40.143388, -75.003758], [40.144858, -75.006929], [40.153489, -75.029717], [40.154787, -75.032528], [40.161429, -75.045209], [40.162362, -75.047248], [40.16277, -75.048481], [40.16314, -75.049989], [40.163328, -75.051249], [40.163451, -75.052848], [40.162271, -75.075888], [40.16233, -75.079348], [40.16329, -75.099368], [40.163429, -75.103681], [40.163269, -75.106068], [40.161868, -75.119758], [40.161321, -75.123481], [40.160651, -75.125981], [40.159589, -75.128712], [40.151612, -75.144821], [40.149782, -75.14804], [40.14511, -75.155298], [40.143978, -75.15732], [40.142562, -75.160238], [40.14033, -75.16601], [40.136538, -75.176391], [40.135379, -75.18073], [40.133721, -75.189029], [40.133662, -75.190038], [40.133512, -75.1911], [40.133501, -75.191792], [40.133619, -75.192157], [40.134301, -75.193181], [40.134547, -75.193691], [40.13473, -75.194501], [40.134531, -75.196711], [40.134011, -75.19876], [40.13414, -75.19949], [40.134381, -75.199999], [40.134971, -75.200917], [40.135357, -75.201169], [40.13797, -75.201179], [40.13944, -75.201448], [40.139971, -75.201711], [40.140379, -75.201877], [40.144488, -75.20413], [40.145528, -75.204468], [40.146312, -75.204559], [40.147562, -75.20435], [40.153478, -75.20185], [40.154428, -75.201507], [40.155651, -75.201228], [40.15674, -75.201137], [40.16064, -75.201271], [40.161488, -75.201351], [40.162791, -75.201652], [40.163961, -75.202129], [40.164942, -75.202687], [40.166139, -75.203599], [40.167061, -75.204457], [40.171068, -75.208561], [40.171701, -75.209317], [40.173488, -75.211967], [40.174148, -75.212659], [40.174968, -75.213147], [40.175591, -75.213351], [40.176497, -75.213432], [40.177602, -75.213137], [40.177811, -75.21296], [40.179179, -75.212032], [40.179769, -75.211662], [40.1814, -75.21583], [40.183042, -75.22033], [40.18559, -75.227841], [40.185692, -75.227921], [40.186582, -75.228967], [40.192118, -75.239337], [40.192998, -75.240887], [40.194398, -75.243027], [40.196228, -75.246927], [40.198658, -75.250757], [40.201249, -75.254121], [40.201908, -75.255108], [40.2034, -75.258278], [40.204199, -75.260231], [40.204312, -75.260478], [40.2048, -75.261889], [40.206291, -75.26728], [40.206753, -75.268621], [40.207021, -75.26927], [40.20841, -75.271421], [40.208711, -75.272017], [40.210572, -75.277118], [40.210888, -75.278288], [40.211071, -75.278958], [40.21158, -75.281297], [40.21164, -75.28164], [40.212197, -75.28392], [40.212948, -75.28613], [40.213512, -75.287439], [40.215148, -75.290191], [40.216559, -75.292251], [40.216231, -75.29253], [40.215851, -75.292739], [40.215598, -75.292788], [40.214719, -75.292589], [40.21429, -75.292611], [40.212149, -75.293571], [40.211688, -75.293861], [40.20992, -75.295623]];
     map.drawPolyline({
         path: path1,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path2,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path3,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path4,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path5,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path6,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path7,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path8,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path9,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path10,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path11,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path12,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path13,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path14,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path15,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path16,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path17,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path18,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path19,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path20,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path21,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path22,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path23,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path24,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path25,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path26,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path27,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path28,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path29,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path30,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path31,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path32,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path33,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path34,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path35,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path36,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path37,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path38,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path39,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path40,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path41,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path42,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path43,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path44,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path45,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path46,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path47,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path48,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path49,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path50,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path51,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path52,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path53,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path54,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path55,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path56,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path57,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path58,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path59,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path60,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path61,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path62,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path63,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path64,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path65,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path66,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path67,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path68,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path69,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path70,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path71,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path72,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path73,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path74,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path75,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path76,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path77,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path78,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path79,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path80,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path81,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path82,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path83,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path84,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path85,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path86,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path87,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path88,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path89,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path90,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path91,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path92,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path93,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path94,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path95,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path96,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path97,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path98,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path99,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path100,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path101,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path102,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path103,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path104,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path105,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path106,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path107,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path108,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path109,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path110,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path111,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path112,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path113,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path114,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path115,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path116,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path117,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path118,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path119,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path120,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path121,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path122,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path123,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path124,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path125,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path126,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path127,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path128,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path129,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path130,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path131,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path132,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path133,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path134,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path135,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path136,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path137,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path138,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path139,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path140,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path141,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path142,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path143,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path144,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path145,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path146,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path147,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path148,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path149,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path150,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path151,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path152,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path153,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path154,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path155,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path156,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path157,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path158,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path159,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path160,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path161,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path162,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path163,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path164,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path165,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path166,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path167,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path168,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path169,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path170,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path171,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path172,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path173,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path174,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path175,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path176,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path177,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path178,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path179,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path180,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path181,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path182,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path183,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path184,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path185,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path186,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path187,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path188,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path189,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path190,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path191,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path192,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path193,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path194,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path195,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path196,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path197,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path198,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path199,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path200,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path201,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path202,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path203,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path204,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path205,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path206,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path207,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path208,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path209,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path210,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path211,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path212,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path213,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path214,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path215,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path216,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path217,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path218,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path219,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path220,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path221,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path222,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path223,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path224,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path225,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path226,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path227,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path228,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path229,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path230,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path231,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path232,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path233,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path234,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path235,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path236,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path237,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path238,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path239,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path240,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path241,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path242,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path243,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path244,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path245,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path246,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path247,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path248,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path249,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path250,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path251,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path252,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path253,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path254,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path255,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path256,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path257,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path258,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path259,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path260,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path261,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path262,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path263,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path264,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path265,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path266,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path267,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path268,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path269,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path270,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path271,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path272,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path273,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path274,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path275,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path276,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path277,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path278,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path279,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path280,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path281,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path282,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path283,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path284,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path285,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path286,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path287,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path288,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path289,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path290,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path291,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path292,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path293,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path294,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path295,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path296,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path297,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path298,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path299,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path300,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path301,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path302,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path303,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path304,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path305,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path306,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path307,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path308,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path309,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path310,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path311,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path312,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path313,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path314,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path315,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path316,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path317,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path318,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path319,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path320,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path321,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path322,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path323,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path324,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path325,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path326,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path327,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path328,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path329,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path330,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path331,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path332,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path333,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path334,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path335,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path336,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path337,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path338,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path339,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path340,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path341,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path342,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path343,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path344,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path345,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path346,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path347,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path348,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path349,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path350,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path351,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path352,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path353,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path354,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path355,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path356,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path357,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path358,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path359,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path360,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path361,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path362,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path363,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path364,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path365,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path366,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path367,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path368,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path369,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path370,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path371,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path372,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path373,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path374,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path375,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path376,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path377,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path378,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path379,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path380,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path381,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path382,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path383,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path384,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path385,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path386,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path387,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path388,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path389,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path390,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path391,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path392,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path393,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path394,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path395,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path396,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path397,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path398,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path399,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path400,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path401,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path402,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path403,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path404,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path405,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path406,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path407,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path408,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path409,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path410,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path411,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path412,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path413,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path414,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path415,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path416,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path417,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path418,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path419,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path420,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
     map.drawPolyline({
         path: path421,
-        strokeColor: '#5d201f',
+        strokeColor: color_wp,
         strokeOpacity: 0.2,
         strokeWeight: 2
       });

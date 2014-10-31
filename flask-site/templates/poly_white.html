@@ -12,9 +12,52 @@
   <script src="{{ url_for('static',filename='kennilworth.js') }}" ></script>
   <script src="{{ url_for('static',filename='whitehouse.js') }}" ></script>
   <script src="{{ url_for('static',filename='westpoint.js') }}" ></script>
-  <script type="text/javascript">
+<script type="text/javascript">
     var map;
-    $(document).ready(function(){
+    var color_kw = '953233'; // RED
+    var color_ws = '2c3485'; // BLUE
+    var color_wp = '2d6c3e'; // GREEN
+    map = new GMaps({
+        el: '#map',
+        zoom: 8,
+        lat: 40.607779,
+        lng: -74.768333,
+        click: function(e){
+          console.log(e);
+        }
+      });
+function call_all(color_kw,color_ws,color_wp)
+{
+    var map = new GMaps({
+        el: '#map',
+        zoom: 8,
+        lat: 40.607779,
+        lng: -74.768333,
+        click: function(e){
+          console.log(e);
+        }
+      });
+ 
+ whitehouse(map,color_ws);
+ westpoint(map,color_wp);
+ kennilworth(map,color_kw);
+}
+
+</script>
+<script type="text/javascript">
+    var color_kw = '953233'; // RED
+    var color_ws = '2c3485'; // BLUE
+    var color_wp = '2d6c3e'; // GREEN
+//    call_all('#953233','#A8D7E2','#aee0a3')
+//    call_all(color_kw,color_ws,color_wp);
+</script>
+<!--
+<script type="text/javascript">
+    var map;
+    var color_kw = '953233'; // RED
+    var color_ws = '2c3485'; // BLUE
+    var color_wp = '2d6c3e'; // GREEN
+    $(document).ready(function swag(color_kw,color_ws,color_wp){
       map = new GMaps({
         el: '#map',
 		zoom: 8,
@@ -2990,13 +3033,19 @@ path422 = [[40.664865, -73.979961], [40.665131, -73.979739], [40.665759, -73.979
         strokeOpacity: 0.2,
         strokeWeight: 2
       });
-
+kennilworth(map,color_kw)
+westpoint(map,color_wp)
     });
-  </script>
+
+
+  </script> -->
 </head>
 
 <body>
-<section id=merckmaps>
+<script>
+call_all('#953233','#A8D7E2','#aee0a3')
+</script>
+<!--<section id=merckmaps> -->
   <h1><center>Merck Traffic Routes Based On Location</center></h1>
   <div class="row">
     <!--<div class="span11">
@@ -3008,13 +3057,13 @@ path422 = [[40.664865, -73.979961], [40.665131, -73.979739], [40.665759, -73.979
       <center>
       <p>Change Merck headquarters location by clicking the buttons below!</p>
       <p id="loc">Current Location: Whitehouse Station</p>
-      <button type="button" class="btn btn-success" onclick=kennilworth()> Kennilworth</button>
-      <button type="button" class="btn btn-primary" onclick=whitehouse()> Whitehouse Station</button>
-      <button type="button" class="btn btn-danger" onclick=westpoint()> West Point</button>
+      <button type="button" class="btn btn-success" onclick=call_all('#953233','#A8D7E2','#aee0a3')> Kennilworth</button>
+      <button type="button" class="btn btn-primary" onclick=call_all('#dfa0a8','#2c3485','#aee0a3')> Whitehouse Station</button>
+      <button type="button" class="btn btn-danger" onclick=call_all('#dfa0a8','#a8d72e','#246c3e')> West Point</button>
       </center>
   </div>
   </div>
-</section>
+<!-- </section> -->
 
 
 </body>
